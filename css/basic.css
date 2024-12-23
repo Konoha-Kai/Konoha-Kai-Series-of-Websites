@@ -1,0 +1,146 @@
+/* Basic Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: rgb(0, 0, 0);
+}
+
+/* Resets default styles for all elements. */
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+/* Sets font and background for the body. */
+
+a {
+	text-decoration: none;
+}
+
+/* Removes underline from links. */
+
+.placeholder {
+	display: block;
+	margin-top: 20px;
+	height: 20px;
+}
+
+/* Margin top for placeholder. */
+
+.placeholder-large {
+	display: block;
+	margin-top: 15%;
+}
+
+/* Larger margin top for placeholder. */
+
+.w-full {
+	width: 100%;
+}
+
+/* Full width. */
+
+.font-sm {
+	font-size: 1rem;
+}
+
+/* Small font size. */
+
+.font-xl {
+	font-size: 2.25rem;
+}
+
+/* Extra large font size. */
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Centered flex container. */
+
+.flex-column {
+	flex-direction: column;
+}
+
+/* Column flex direction. */
+
+.justify-start {
+	justify-content: flex-start;
+}
+
+/* Aligns items to the start. */
+
+.justify-end {
+	justify-content: end;
+}
+
+/* Aligns items to the end. */
+
+.justify-between {
+	justify-content: space-between;
+}
+
+/* Space between items. */
+
+.align-start {
+	align-items: flex-start;
+}
+
+/* Aligns items to the start of the cross axis. */
+
+.hid {
+	overflow: hidden;
+}
+
+/* Hides overflow. */
+
+.pos1 {
+	left: 44%;
+}
+
+/* Positioning helper. */
+
+.pos2 {
+	left: 48%;
+}
+
+/* Positioning helper. */
+
+.pos3 {
+	left: 52%;
+}
+
+/* Positioning helper. */
+
+.pos4 {
+	left: 56%;
+}
+
+/* Positioning helper. */
+
+.gray {
+	filter: brightness(75%);
+}
+.white {
+    color: white;
+}
+
+/* Grayscale filter. */
+
+
+@media (max-width: 999px) {
+    .hidden-on-small-screen {
+      display: none; /* 隐藏元素 */
+    }
+}
+/* Media query for hiding elements on small screens. */
+@media (min-width: 1000px) {
+	.hidden-on-large-screen {
+		display: none; 
+	}
+}
+/* Basic Reset End */

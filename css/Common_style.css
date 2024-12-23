@@ -1,0 +1,1319 @@
+
+
+
+
+/*button*/
+/* button in the end*/
+
+.end-button-wrapper {
+	padding: 30px 70px;
+
+}
+
+.end-button-wrapper .end-button {
+	position: relative;
+	padding: 10px 20px;
+	font-size: 2rem;
+	color: #3a3a3a;
+	font-weight: bold;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.end-button-wrapper .end-button:hover {
+	color: #ffffff;
+	background-color: #3a3a3a;
+}
+
+.end-button-wrapper .end-button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border-left: 4px solid #3a3a3a;
+	border-top: 5px solid #3a3a3a;
+	transition: 0.5s;
+}
+
+.end-button-wrapper .end-button::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 15px;
+	height: 15px;
+	border-bottom: 4px solid #3a3a3a;
+	border-right: 5px solid #3a3a3a;
+	transition: 0.5s;
+}
+/* Triangles for button hover effect. */
+.end-button-wrapper .end-button:hover::before,
+.end-button-wrapper .end-button:hover::after {
+	width: 100%;
+	height: 100%;
+}
+
+/* Hover effect for button triangles. */
+
+/* Button End */
+
+
+/* Button 2 */
+.login-button{
+	width: 7rem;
+	height: 3rem;
+	border-radius:4rem;
+	background-color: #3d3d3d;
+	color:#fff;
+	font-weight: bold;
+	font-size:1rem;
+	box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.6);
+	transition: 0.5s;
+}
+.login-button:hover{
+	width: 7rem;
+	height: 3rem;
+	border-radius:4rem;
+	background-color: #3d3d3d;
+	color:#fff;
+	font-weight: bold;
+	font-size:1rem;
+	box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.6);
+}
+/* Button 2 End */
+
+
+/*slider style*/
+.move-container label {
+	display: none;
+}
+
+.about-container-list .move-container .about-img-text1 {
+	position: absolute;
+	width: 29%;
+	top: 15%;
+	left: 69%;
+	z-index: 2;
+}
+
+.about-container-list .move-container .about-img-text1>p:first-child {
+	font-size: 2vw;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.about-container-list .move-container .about-img-text1>p:last-child {
+	margin-top: 10%;
+	font-size: 1vw;
+	color: #ffffff;
+}
+
+.move-container a {
+	width: 3%;
+	height: 6px;
+	background: #c0c0c0;
+	position: absolute;
+	bottom: 1rem;
+	margin: 0;
+	z-index: 1;
+}
+
+.move-container .but {
+	margin: 0;
+	width: 3%;
+	height: 30px;
+	position: absolute;
+	opacity: 0;
+	bottom: 3%;
+	z-index: 10;
+	cursor: pointer;
+}
+
+
+.move-img-container .coer-text1 {
+	position: absolute;
+	top: 67%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.7vw;
+	color: #f4f4f4;
+	z-index: 100;
+	transition: 0.4s;
+}
+
+.move-img-container .coer-text2 {
+	position: absolute;
+	top: 50%;
+	left: 43.5%;
+	transform: translate(-40%, -40%);
+	font-size: 4vw;
+	color: #ffffff;
+	z-index: 100;
+	transition: 0.4s;
+}
+
+
+
+
+/* accessible button*/
+.access {
+	display: flex;
+}
+
+.access .access-container {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.access .access-container .access-img {
+	display: flex;
+	width: 20px;
+}
+
+/* accessible button end*/
+
+
+
+
+
+
+
+
+
+/* Banner Styles */
+.move-container {
+	margin: 0 auto;
+	position: relative;
+}
+
+.move-container .move-img-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.move-container .move-img-container {
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	display: flex;
+	transition: transform 0.4s ease;
+}
+
+
+input:checked+.banner-nav-a {
+	background-color: #ffffff;
+}
+
+/* Slide effect for banner images. */
+#bt1:checked~.move-img-container {
+	transform: translateX(0px);
+}
+
+#bt2:checked~.move-img-container {
+	transform: translateX(-100%);
+}
+
+#bt3:checked~.move-img-container {
+	transform: translateX(-200%);
+}
+
+#bt4:checked~.move-img-container {
+	transform: translateX(-300%);
+}
+
+/* Hover effect for navigation dots. */
+.move-container a::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #ffffff;
+	transition: width 0.5s ease;
+}
+
+.move-container input:hover+a::after {
+	width: 100%;
+}
+
+
+.move-img-container {
+	--right: 100;
+	--moveRight: 5;
+}
+
+.move-img-container p {
+	z-index: 2000;
+	color: #ffffff;
+	white-space: nowrap;
+	position: absolute;
+}
+
+.move-img-container>img#banner01+p {
+	top: 40%;
+	left: 9.5%;
+	font-size: 1.5vw;
+	opacity: 0.9;
+}
+
+.move-img-container>img#banner01+p+p {
+	top: 45%;
+	left: 9.5%;
+	font-size: 4vw;
+}
+
+.move-img-container>img#banner01+p+p+p {
+	top: 57%;
+	left: 9.5%;
+	font-size: 2vw;
+}
+
+.move-img-container>img~.banner-btn {
+	position: absolute;
+	border-radius: 20px;
+	border: 2px solid #fff;
+	width: 12%;
+	height: 8%;
+	background-color: rgba(255, 255, 255, 0.137);
+	z-index: 2000;
+	text-decoration: none;
+}
+
+
+.move-img-container>img~.banner-btn span {
+	color: #ffffff;
+	font-size: 1.25vw;
+}
+
+.move-img-container>img#banner02+p {
+	top: 14%;
+	left: 139%;
+	font-size: 1.3vw;
+	opacity: 0.9;
+}
+
+.move-img-container>img#banner02+p+p {
+	top: 18%;
+	left: 139%;
+	font-size: 4vw;
+}
+
+.move-img-container>img#banner03+p {
+	top: 55%;
+	left: 233%;
+	font-size: 1.35vw;
+
+}
+
+.move-img-container>img#banner03+p+p {
+	top: 60%;
+	left: 232%;
+	font-size: 4vw;
+}
+
+.move-img-container>img#banner04+p {
+	top: 35%;
+	left: 352%;
+	font-size: 1.5vw;
+	opacity: 0.9;
+}
+
+.move-img-container>img#banner04+p+p {
+	top: 40%;
+	left: 352%;
+	font-size: 4vw;
+}
+
+.move-img-container>img#banner04+p+p+p {
+	top: 52%;
+	left: 352%;
+	font-size: 2vw;
+}
+
+/* slider end*/
+
+
+
+
+
+
+
+/* subtitle*/
+.content-record {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+/* Centers and sizes the content record container. */
+.content-record .content-record-title {
+	margin-top: 1vw;
+	margin-bottom: 2vw;
+	text-align: center;
+	color: #ffffff;
+}
+
+/* Font size for the main title. */
+.content-record .content-record-title h2 {
+	font-size: 2.7rem;
+}
+
+.content-record .content-record-title .subheading {
+	margin-top: 0.5vw;
+	margin-bottom: 1vw;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.content-record .content-record-title .subheading p {
+	font-size: 1.2rem;
+	color: #363636;
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+.content-record .content-record-title .subheading h3 {
+
+	font-size: 1.2rem;
+	color: #363636;
+	opacity: 0.9;
+}
+
+.content-record .content-record-title .subheading h4 {
+
+	font-size: 1.2rem;
+	color: #363636;
+	opacity: 0.9;
+}
+.subheading1{
+	margin-top: 0.5vw;
+	margin-bottom: 1vw;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #363636;
+	font-weight: bold;
+	opacity: 0.9;
+}
+
+.content-record .block-container {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	background-color: blanchedalmond;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+
+}
+
+/* Creates a flex container for blocks with padding and background color. */
+.content-record .block {
+	width: 12vw;
+	height: 100%;
+	margin: 0 0.5vw;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 8%;
+	border-color: #000000;
+	border-width: 3px;
+	background-color: #3bc1d9;
+}
+
+/* subheading end*/
+
+
+
+
+/*Copyright area*/
+.footer {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	background-color: #464646;
+	padding: 2%;
+	font-size: 1rem;
+}
+
+/* Flex container for footer content. */
+.footer .wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.footer .wrapper .top-wrapper {
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.footer .wrapper p {
+	color: #ffffff;
+}
+
+.footer .wrapper .logo img {
+	width: 10vw;
+	height: auto;
+}
+
+/* Logo image size within the footer. */
+.footer .social-media {
+	padding: 5px;
+	gap: 0 10px;
+}
+
+.footer .social-media img {
+	width: 1.25rem;
+	height: auto;
+}
+
+/*Copyright end*/
+
+
+
+/* Mask START*/
+.mark {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: transparent !important;
+	z-index: -1;
+}
+
+.mark-box {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	-webkit-backdrop-filter:blur(10px);
+	backdrop-filter: blur(10px);
+	
+	filter: blur(10px);
+	z-index: 1;
+
+}
+
+/* Hidden input for mask layer interaction. */
+/* Keyframes for showing the mask layer. */
+@keyframes big {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes showMark {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* Mask END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For PC */
+@media screen and (min-width: 1000px) {
+
+	/* START */
+	.logo {
+		display: block;
+	}
+
+	.logo-mobile,
+	.list-mobile {
+		display: none;
+	}
+
+	/* head END */
+	/* PC style*/
+	/* Navbar Styles Strat */
+	.navbar {
+		position: fixed;
+		top: 0;
+		background-color: rgba(239, 239, 239, 0.95);
+		color: #ffffff;
+		border-radius: 10px;
+		width: 100%;
+		height: 80px;
+		/*padding: 10px 0;*/
+		z-index: 1000;
+	}
+
+	.navbar .container {
+		width: 100%;
+		position: relative;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	/* Adjust the container width and margin for the second child */
+	.navbar .container:nth-child(2) {
+		width: 50%;
+
+		margin-left: -50%;
+
+	}
+
+	/*logo*/
+	h2 {
+		white-space: nowrap;
+	}
+
+	/* Prevent text wrapping for the logo text */
+	.navbar .container a h1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	h1 .logo {
+		margin-left: 6%;
+		width: 280px;
+	}
+
+	h1 .logo:hover {
+		transform: scale(1.07);
+		transition: transform 0.6s ease;
+	}
+
+	h1 .logo:not(:hover) {
+		transform: scale(0.934);
+		transition: transform 0.6s ease;
+		transition-delay: 0.05s;
+	}
+
+	/*Slide the track nav bar*/
+	.navbar-nav {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		position: relative;
+		height: 60px;
+	}
+
+	.nav-item {
+		margin-left: 0.4vw;
+		margin-right: 5vw;
+	}
+
+	.nav-box {
+		position: absolute;
+		bottom: 18px;
+		left: 30vw;
+		width: 70px;
+		height: 0.17vw;
+		border-radius: 20px;
+		transition: all .9s;
+		z-index: 500;
+	}
+
+	/* Change the nav box position and background color on hover */
+	ul li:nth-child(1):hover~.nav-box {
+		left: calc(100% / 4 *0.1);
+		background-color: #000000;
+	}
+
+	ul li:nth-child(2):hover~.nav-box {
+		left: calc(100% / 4 *1.13);
+		background-color: #000000;
+	}
+
+	ul li:nth-child(3):hover~.nav-box {
+		left: calc(100% / 4 *2.06);
+		background-color: #000000;
+	}
+
+	ul li:nth-child(4):hover~.nav-box {
+		left: calc(100% / 4 *3.05);
+		background-color: #000000;
+	}
+
+	/* Navigation link styles */
+	.nav-link {
+		color: rgb(61, 61, 61);
+		text-decoration: none;
+		padding: 5px 0;
+		display: block;
+		font-size: 20px;
+		transition: color 0.4s ease;
+	}
+
+	.nav-link:hover {
+		color: rgb(0, 0, 0);
+	}
+
+	.pop-learn, .pop-about, .pop-eqpt {
+		position: fixed;
+		top: 52px;
+		left: 0;
+		width: 100vw;
+		height: auto;
+		z-index: 1000;
+		/* opacity: 0; */
+		/* visibility: hidden; */
+		border-top: 25px solid transparent;
+	}
+
+	/* Popup navigation styles */
+	.nav-pop {
+		position: fixed;
+		top: 100px;
+		left: 0;
+		width: 100vw;
+		height: calc(100vh - 60px);
+		background: rgba(255, 255, 255, 0.2);
+		z-index: 3;
+		-webkit-backdrop-filter: blur(15px);
+		backdrop-filter: blur(15px);
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.nav-pop-blur {
+		position: fixed;
+		top: 100px;
+		left: 0;
+		width: 100vw;
+		height: calc(100vh - 60px);
+		background: rgba(255, 255, 255, 0.2);
+		z-index: 2;
+		-webkit-backdrop-filter: blur(8px);
+		backdrop-filter: blur(8px);
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease, visibility 0.3s ease;
+	}
+
+	.tab-eqpt:hover ~ .nav-pop-blur,
+	.tab-about:hover ~ .nav-pop-blur {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.navbar {
+		position: fixed !important;
+	}
+
+	/* .tab-learn:hover .pop-learn,
+	.tab-eqpt:hover .pop-eqpt,
+	.tab-about:hover .pop-about,
+	.pop-learn:hover,
+	.pop-eqpt:hover,
+	.pop-about:hover {
+		animation: show 0.5s forwards;
+	} */
+
+	
+	.tab-eqpt:hover~.nav-pop,
+	.tab-about:hover~.nav-pop {
+		/* Animation for popup navigation on hover */
+		animation: showMark 0.5s forwards;
+	}
+
+	.pop-about .info-content {
+		/* Padding and background color for the about popup content */
+		padding: 30px 30px 30px 60px;
+		background-color: #fff;
+	}
+
+	.pop-about .left-box {
+		width: 50%;
+		gap: 20px 0px;
+	}
+
+	.pop-about .left-box .img-list {
+		gap: 0 10px;
+	}
+
+	.pop-about .left-box .img-list img {
+		width: calc(100% - 5px);
+		height: auto;
+	}
+
+	/* Width, padding, and gap for the center box in the about popup */
+	.pop-about .center-box {
+		width: 30%;
+		padding-left: 60px;
+		gap: 20px 0px;
+	}
+
+	.pop-about .center-box .program-list {
+		gap: 30px 20px;
+		flex-wrap: wrap;
+	}
+
+	.pop-about .center-box .program-item {
+		position: relative;
+		width: calc(50% - 10px);
+		padding-left: 20px;
+		font-size: 14px;
+		color: #000;
+	}
+
+	.pop-about .center-box .program-item:before {
+		/* Pseudo element for the program item */
+		position: absolute;
+		content: '';
+		top: 2px;
+		left: 0;
+		width: 16px;
+		height: 14px;
+		background: url('../picture/tv.png') no-repeat top;
+		background-size: 100% 100%;
+		color: black;
+	}
+
+	.pop-about .right-box {
+		width: 20%;
+		margin-top: -120px;
+		margin-left: -50px;
+	}
+
+	.pop-about .right-box .check-btn img {
+		/* Width, height, and margin for the check button image */
+		width: 16px;
+		height: auto;
+		margin-left: 2px;
+	}
+
+	.pop-eqpt .device-list{
+		background-color: #f8f8f8;
+		padding: 30px;
+		flex-wrap: wrap;
+	}
+
+	.pop-eqpt .device-list .device-item{
+		width: 12.5%;
+		height: 150px;
+	}
+
+
+	.device-item .device-img {
+		height: 100px;
+	}
+
+	.device-img img {
+		max-height: 100px;
+		width: auto;
+	}
+
+	.device-item .device-name {
+		position: relative;
+	}
+
+	.device-name::after {
+		/* Pseudo element for the device name */
+		position: absolute;
+		content: 'NEW!';
+		font-size: 14px;
+		left: calc(50% - 14px);
+		bottom: -20px;
+		color: darkorange;
+	}
+
+	/* Navbar Styles End */
+	.move-img-container>img#banner01+p+p+p+.banner-btn {
+		left: 9.5%;
+		top: 65%;
+	}
+
+	.move-img-container>img#banner02+p+p+.banner-btn {
+		left: 143%;
+		top: 30%;
+	}
+
+	.move-img-container>img#banner03+p+p+.banner-btn {
+		left: 245%;
+		top: 74%;
+	}
+
+	.move-img-container>img#banner04+p+p+p+.banner-btn {
+		left: 352%;
+		top: 60%;
+	}
+
+	/* photo list START */
+	.photo-container {
+		padding-left: 13%;
+		padding-right: 13%;
+	}
+
+	.photo-list {
+		gap: 0 1px;
+		margin: 10px 0;
+
+	}
+
+	.photo-list .photo-box {
+		position: relative;
+		width: calc(25% - 4px);
+		aspect-ratio: 3 / 5;
+		overflow: hidden;
+		border-radius: 15px;
+	}
+
+	.photo-box a {
+		display: none;
+	}
+
+	.photo-box label {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+	}
+
+	.photo-list .photo-box img {
+		/* Width, height, transition, border radius, and transform for the photo image */
+		width: 100%;
+		height: 100%;
+		transition: all 0.5s;
+		border-radius: 15px;
+		transform: scale(0.9);
+	}
+
+	.photo-box:hover img {
+		transform: scale(1);
+	}
+
+	[id^="fm"]:checked~.mark {
+		z-index: 1001;
+	}
+
+	/* When a form element with an ID starting with "fm" is checked, set the z-index of the following sibling element with class .mark to 1001, making it appear on top. */
+	.mode-box {
+		position: absolute;
+		width: 700px;
+		height: 550px;
+		background-color: #fff;
+		border-radius: 4px;
+		visibility: hidden;
+		transform: scale(0);
+		z-index: 2;
+	}
+
+	.box-content {
+		padding: 50px;
+		line-height: 1.6;
+		font-size: 18px;
+	}
+
+	.box-content .box-content-title1 {
+		font-size: 45px;
+		line-height: 1.6;
+	}
+
+	.box-content .box-content-title2 {
+		font-size: 15px;
+		line-height: 1;
+		color: rgba(58, 58, 58, 0.95);
+	}
+
+	.box-content a {
+		color: #565656;
+		font-size: smaller;
+		text-decoration: none;
+		transition: color 0.3s ease, text-decoration 0.3s ease;
+	}
+
+	.box-content a:hover {
+		color: #181818;
+		text-decoration: underline solid #181818;
+	}
+
+	#fm1:checked~.mark .mode1,
+	#fm2:checked~.mark .mode2,
+	#fm3:checked~.mark .mode3,
+	#fm4:checked~.mark .mode4 {
+		/* Animation for the mode box when the corresponding form element is checked */
+		animation: big 0.5s forwards;
+	}
+
+	.mode-box label {
+		position: absolute;
+
+		top: 4px;
+		right: 4px;
+
+	}
+
+	.mode-box img {
+		width: 16px;
+		height: auto;
+	}
+
+}
+
+/*PC  End*/
+
+
+.menuBox {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menuBox .nav-link {
+	margin: 0 50px;
+}
+
+
+.navbar-collapse,
+.menuBox {
+	width: 100%;
+}
+
+
+/* Moblie */
+.moblie-logo {
+	float: left;
+	align-items: center;
+}
+
+.box-content {
+	padding: 50px;
+	line-height: 1.6;
+	font-size: 18px;
+}
+
+.box-content .box-content-title1 {
+	font-size: 45px;
+	line-height: 1.6;
+}
+
+.box-content .box-content-title2 {
+	font-size: 15px;
+	line-height: 1;
+	color: rgba(58, 58, 58, 0.95);
+}
+
+.box-content a {
+	color: #565656;
+	font-size: smaller;
+	text-decoration: none;
+	transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.box-content a:hover {
+	color: #181818;
+	text-decoration: underline solid #181818;
+}
+
+@media screen and (max-width: 1000px) {
+	.menuBox h1 {
+		display: none;
+	}
+
+	/* head START */
+	.container .logo,
+	.navbar-nav,
+	.photo-box label {
+		display: none;
+	}
+
+	.logo-mobile {
+		display: block;
+		width: 200px;
+		height: auto;
+	}
+
+	.list-mobile {
+		display: block;
+		position: relative;
+	}
+
+	.list-mobile label {
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	.list-mobile img {
+		width: 40px;
+		height: auto;
+	}
+
+	.navbar {
+		padding: 5px;
+	}
+
+	.container h1 {
+		gap: 0 10px;
+	}
+
+	/* banner START */
+	.move-img-container {
+		--right: 100;
+		--moveRight: 2;
+	}
+
+	.move-img-container>img~.banner-btn {
+		top: 10%;
+		width: 100%;
+		height: 100%;
+		font-size: 10px;
+		border-radius: 0%;
+		background-color: rgba(0, 0, 0, 0);
+
+	}
+
+	.move-img-container>img~.banner-btn span {
+		visibility: hidden;
+	}
+
+	.move-img-container>img#banner01+p+p+p+.banner-btn {
+		transform: translate(0, -10%);
+	}
+
+	.move-img-container>img#banner02+p+p+.banner-btn {
+		left: 100%;
+		top: 0%;
+	}
+
+	.move-img-container>img#banner03+p+p+.banner-btn {
+		left: 200%;
+		top: 0%;
+	}
+
+	.move-img-container>img#banner04+p+p+p+.banner-btn {
+		left: 300%;
+		top: 0%;
+	}
+
+	/* banner END */
+	/* head END */
+	/* photo START */
+	.content-record-title h2 {
+		font-size: 20px;
+	}
+
+	.photo-list {
+		gap: 4px 0;
+		margin: 10px 0;
+		flex-direction: column;
+	}
+
+	.photo-list .photo-box {
+		position: relative;
+		max-width: 100%;
+		aspect-ratio: 3 / 5;
+	}
+
+	.photo-box a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	.photo-list .photo-box img {
+		width: 100%;
+		height: 100%;
+	}
+
+	/* Mask START*/
+	/* When a form element with an ID starting with "fm" is checked, set the z-index of the following sibling element with class .mark to 1001, making it appear on top. */
+	.mode-box {
+		position: absolute;
+		width: 80vw !important;
+		background-color: #fff;
+		border-radius: 4px;
+		visibility: hidden;
+		transform: scale(0);
+		z-index: 2;
+	}
+
+	.mark-input-mobile {
+		display: block;
+	}
+
+	.mark .nav-mobile {
+		display: flex;
+	}
+
+	.nav-mobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 70%;
+		height: 100%;
+		background-color: #fff;
+		visibility: hidden;
+		padding: 20px 5px 20px 30px;
+		z-index: 2;
+	}
+
+	.nav-mobile .close img {
+		width: 30px;
+		height: auto;
+	}
+
+	.nav-list-mobile {
+		margin-top: 40px;
+		font-size: 22px;
+	}
+
+	.nav-item-mobile {
+		height: 50px;
+	}
+
+	#mobileList:checked~.mark {
+		z-index: 1001;
+	}
+
+	#mobileList:checked~.mark .nav-mobile {
+		animation: show 0.5s forwards;
+	}
+
+	/* Mask END */
+	/* footer START */
+	.bottom-wrapper {
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 5px 0;
+	}
+
+	.text-zl {
+		text-align: center;
+	}
+
+	.footer .wrapper .top-wrapper {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.footer .wrapper .logo img {
+		width: 50vw;
+		height: auto;
+	}
+
+	.logoBox .logo1 {
+		display: none !important;
+	}
+
+	.moblie-logo {
+		margin-top: 10px;
+	}
+
+
+	.justify-start {
+		justify-content: center !important;
+		flex: 1;
+	}
+
+	.nav-link {
+		text-align: center;
+	}
+
+	.navbarMenu {
+		display: inline-block !important;
+	}
+
+	.close img {
+		width: 30px;
+		height: auto;
+	}
+
+	.mode-box label {
+		position: absolute;
+		top: 4px;
+		right: 4px;
+	}
+
+	.mode-box label img {
+		width: 16px;
+		height: auto;
+	}
+
+	/* footer END */
+}
+
+.firefox-display {
+	display: none;
+}
+
+.pop-about, .pop-eqpt, .pop-learn {
+	display: none;
+}
+
+.navbarMenu {
+	display: flex;
+	width: 100%;
+	flex: 1;
+	justify-content: space-between;
+}
+
+.collapse {
+	justify-content: flex-end;
+}
+
+.pop-about a {
+	color: #000;
+}

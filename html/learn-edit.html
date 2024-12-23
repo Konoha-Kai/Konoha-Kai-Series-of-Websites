@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="This website aims to provide a platform for people to share their knowledge and experience in the field of video." />
+  <meta name="author" content="Guangkai Shang" />
+  <title>learn Editing Skill</title>
+  <!-- icon-->
+  <link rel="icon" type="image/x-icon" href="../picture/web_logo.ico" />
+  <!-- style CSS -->
+  <link rel="stylesheet" href="../css/basic.css" />
+  <link rel="stylesheet" href="../css/tu.css">
+  <link rel="stylesheet" href="../css/Common_style.css" />
+  <link rel="stylesheet" href="../css/style-compare.css" />
+  <link rel="stylesheet" href="../css/Unique_style.css" />
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstarp.css" />
+  <script src="../js/tu.js"></script>
+  <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="navbarMenu">
+      <div class="moblie-logo list-mobile">
+        <!-- <label for="mobileList">1</label> -->
+        <!-- <img src="../picture/list.png" alt="list" /> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <a class="flex logoBox" href="index_myself.html">
+        <h1 class="flex justify-start">
+          <img class="logo logo1" src="../picture/logo_black_1000&300.png" alt="Konoha_Kai(Logo)" />
+
+          <img class="logo-mobile" src="../picture/logo_black_1000&300.png" alt="Konoha_Kai(Logo)" />
+        </h1>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!--Navigation bar pops up -->
+          <li class="flex h-full nav-item nav-link">
+            <a href="index_myself.html" class="nav-link ">Home</a>
+          </li>
+          <!-- learn pops-->
+          <li class="flex h-full nav-item tab-learn menuBtn1">
+            <a href="learn-edit.html" class="nav-link active">Learn</a>
+
+          </li>
+          <!-- Eqpt pops-->
+          <li class="flex h-full nav-item tab-eqpt menuBtn2">
+            <a href="learn-eqpt.html" class="nav-link">Eqpt</a>
+            <div class="pop-eqpt pop">
+              <div class="w-full flex justify-start align-start device-list pop-child">
+                <!-- Eqpt pops picture list-->
+                <div class="flex flex-column justify-start device-item">
+                  <a href="https://www.dji.com/cn/osmo-pocket-3">
+                    <div class="flex w-full device-img">
+                      <img src="../picture/dj1.png" alt="Osmo Pocket" />
+                    </div>
+                    <div class="font-sm w-full flex device-name">
+                      Osmo Pocket
+                    </div>
+                  </a>
+                </div>
+
+                <div class="flex flex-column justify-start device-item">
+                  <a href="https://www.dji.com/cn/camera-drones">
+                    <div class="flex w-full device-img">
+                      <img src="../picture/dj2.png" alt="DJI Drone" />
+                    </div>
+                    <div class="font-sm w-full flex">DJI Drone</div>
+                  </a>
+                </div>
+
+                <div class="flex flex-column justify-start device-item">
+                  <a href="https://www.nikon.com.cn/sc_CN/">
+                    <div class="flex w-full device-img">
+                      <img src="../picture/dj4.png" alt="Camcorder" />
+                    </div>
+                    <div class="font-sm w-full flex">Camcorder</div>
+                  </a>
+                </div>
+
+                <div class="flex flex-column justify-start device-item">
+                  <a href="https://www.nikon.com.cn/sc_CN/">
+                    <div class="flex w-full device-img">
+                      <img src="../picture/dj3.png" alt="Movie Camera" />
+                    </div>
+                    <div class="font-sm w-full flex device-name">
+                      Movie Camera
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex-column justify-start device-item"></div>
+                <div class="flex flex-column justify-start device-item"></div>
+                <div class="flex flex-column justify-start device-item"></div>
+                <!-- placeholder block-->
+                <div class="flex flex-column justify-start device-item">
+                  <a href="learn-eqpt.html">
+                    <div class="flex w-full device-img">
+                      <img src="../picture/buy.svg" alt="More" />
+                    </div>
+                    <div class="font-sm w-full flex device-name">More</div>
+                  </a>
+                </div>
+                <!-- Eqpt pops picture list end-->
+              </div>
+            </div>
+          </li>
+          <!-- About pops-->
+          <li class="flex h-full nav-item tab-about menuBtn3">
+            <a href="About.html" class="nav-link">About</a>
+            <div class="pop-about pop">
+              <div class="w-full flex justify-start info-content pop-child info-content-wrapper">
+                <div class="flex flex-column align-start left-box">
+                  <!-- Latest Releases (2pictures)-->
+                  <span class="font-xl">Latest Releases</span>
+                  <div class="w-full flex justify-start img-list">
+                    <a href="https://www.bilibili.com/video/BV1W64y177BB/"><img src="../picture/my3.png"
+                        alt="AI and the World" /></a>
+                    <a href="https://www.bilibili.com/video/BV1Ab4y1g7hK/"><img src="../picture/my2.png"
+                        alt="Run with Wind" /></a>
+                  </div>
+                </div>
+                <div class="flex flex-column align-start center-box">
+                  <span class="font-xl">Popular Shows</span>
+                  <div class="w-full flex justify-start align-start program-list">
+                    <div class="program-item">
+                      <a href="https://www.bilibili.com/video/BV14N4y1o78g/">科学忍具螺旋丸？</a>
+                    </div>
+                    <div class="program-item">
+                      <a href="https://www.bilibili.com/video/BV1Ab4y1g7hK/">[Reset]起身向远方</a>
+                    </div>
+                    <div class="program-item">
+                      <a href="https://www.bilibili.com/video/BV1W64y177BB/">MY AI WORLD</a>
+                    </div>
+                    <div class="program-item">
+                      <a href="https://www.bilibili.com/video/BV11w411t7de/">青春为扬华，自强抒华章</a>
+                    </div>
+                    <div class="program-item">
+                      <a href="https://www.bilibili.com/video/BV13H4y197pH/">科幻大会</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-end align-start right-box">
+                  <div class="font-sm flex check-btn">
+                    <span><a href="About.html">MORE</a></span>
+                    <img src="../picture/turn-right.png" alt="More" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="flex h-full">
+            <a href="Login.html" target="_blank" class="font-sm flex banner-btn login-button "><span class="white">
+                Login </span></a>
+          </li>
+          <!-- Mask -->
+          <li class="nav-pop"></li>
+          <li class="nav-pop-blur"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Main body-->
+  <!--cover-->
+  <div class="w-full move-container">
+    <div class="move-img-container">
+      <img src="../picture/About-cover.png" alt="This is a camera" />
+      <p class="coer-text1">
+        "A good teacher can inspire hope, ignite the imagination, and instill
+        a love of learning." — Brad Henry
+      </p>
+      <p class="coer-text2">Let's learn editing Skill together!</p>
+    </div>
+  </div>
+
+
+
+
+  <!--cover end-->
+  <!--accessible button-->
+  <div class="access">
+    <div class="flex access-container">
+      <div class="access-img">
+        <img src="../picture/accessibility.svg" alt="accessibility" aria-label="accessibility audio"
+          title="accessibility audio" />
+      </div>
+      <audio controls>
+        <source src="../audio/edit.mp3" type="audio/mp3">
+        <source src="../audio/edit.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  <!--accessible button end-->
+  <div class="content-record">
+    <div class="center content-record-title">
+      <h2>Quick Start</h2>
+      <div class="subheading">
+        <h3>
+          In video production, the most challenging technical aspect is
+          editing. Once you've mastered the basic editing skills, you can
+          start your video creation journey.Here are some videos I found
+          helpful when I was learning editing.The editing tool I'm introducing
+          here is Pr (Adobe Premiere Pro).
+        </h3>
+      </div>
+    </div>
+    <!--grid-container to contain the cover of picture-->
+    <div class="grid-container">
+      <a href="https://www.bilibili.com/video/BV1sf4y1X7AD/">
+        <div class="flex flex-column grid-item">
+          <div class="w-full hid grid-item-photo">
+            <img class="w-full" src="../picture/Pr2.jpg" alt="Rule of Six" />
+          </div>
+          <div class="grid-item-text">
+            <p>Rule of Six</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.bilibili.com/video/BV1Gt411m7qE/">
+        <div class="flex flex-column grid-item">
+          <div class="w-full hid grid-item-photo">
+            <img class="w-full" src="../picture/Pr.jpg"
+              alt="Davinci or Pr. Which of the two editing software is better?" />
+          </div>
+          <div class="grid-item-text">
+            <p>Davinci or Pr. Which of the two editing software is better?</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.bilibili.com/video/BV1K64y1r7pp/">
+        <div class="flex flex-column grid-item">
+          <div class="w-full hid grid-item-photo">
+            <img class="w-full" src="../picture/Pr1.jpg" alt="Learn PR in 90 minutes" />
+          </div>
+          <div class="grid-item-text">
+            <p>Learn PR in 90 minutes</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.bilibili.com/video/BV17i4y1L7a3/">
+        <div class="flex flex-column grid-item">
+          <div class="w-full hid grid-item-photo">
+            <img class="w-full" src="../picture/Pr4.png" alt="2 Ways to add TEXT BEHIND moving objects " />
+          </div>
+          <div class="grid-item-text">
+            <p>2 Ways to add TEXT BEHIND moving objects</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.bilibili.com/video/BV13V411a7t5/">
+        <div class="flex flex-column grid-item">
+          <div class="w-full hid grid-item-photo">
+            <img class="w-full" src="../picture/Pr5.jpg" alt="PR Transition Tutorials" />
+          </div>
+          <div class="grid-item-text">
+            <p>PR Transition Tutorials</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!--grid-container end-->
+  </div>
+  <!--deeper learn area-->
+  <div class="content-record">
+    <div class="center content-record-title">
+      <h2>Advanced Features</h2>
+      <div class="subheading">
+        <h3>
+          Video editing is not just about simply splicing clips together.
+          Broadly speaking, editing also includes color grading (restoring
+          color to the footage), animation creation, and more.
+        </h3>
+        <h3>Now, I will teach you the most fundamental concept in color adjustment, saturation. Please drag your images here
+        </h3>
+        <!-- Comparison picture area -->
+
+
+        <div id="dropzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+          <p class="drop-text">Drag your images here</p>
+        </div>
+        <div class="slider-container">
+          <label for="brightness-slider">o</label>
+          <input 
+              type="range" 
+              min="30" 
+              max="200" 
+              value="100" 
+              class="slider" 
+              id="brightness-slider" 
+              oninput="adjustBrightness(this.value)"
+              aria-label="Saturation Adjustment Module"
+              aria-valuemin="30"
+              aria-valuemax="200"
+              aria-valuenow="100"
+          >
+        </div>
+        <div class="image-container">
+          <img class="w-full" id="original-image" src="" alt="Original Image">
+          <img class="w-full" id="comparison-image" src="" alt="Comparison Image">
+          <span>The current saturation level is <span id="brightness-value">100</span></span>
+        </div>
+
+        <h3>By dragging the slider to adjust the saturation, you will notice that saturation significantly affects the appearance and perception of an image. Learning how to adjust saturation to make the image look most comfortable is something we will need to learn in the future.
+        </h3>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="contrast-container visible-sm visible-md visible-lg">
+    <div class="img background-img"></div>
+    <div class="img foreground-img"></div>     
+      <input type="range" 
+             min="1" 
+             max="100" 
+             value="50" 
+             class="slider" 
+             name="slider" 
+             id="slider"
+             aria-label="contrast control"
+             title="contrast control">
+    
+    <div class="slider-button"></div>
+  </div>
+
+
+
+
+
+
+
+  <script src="../js/contrast_picture_PC.js"></script>
+
+  <div class="w-full moblie-contrast-container visible-xs">
+    <img class="w-full" src="../picture/Compare_original.png" id="toggle-image" alt="Initial Image" />
+    <p class="contrast-container-text">
+      Click on the image to view the effect comparison
+    </p>
+  </div>
+  <script src="../js/contrast_picture_moblie.js"></script>
+  <div class="content-record">
+  <div class="center content-record-title">
+    <div class="subheading">
+      <p>We have learned enough about color matching for now. Next, let's take a look at modeling.
+        Here, I would like to introduce video production tools C4D (for
+        animation creation) and DaVinci (for color grading).
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <div class="grid-container">
+    <a href="https://www.bilibili.com/video/BV1sr4y1G743/">
+      <div class="flex flex-column grid-item">
+        <div class="w-full hid grid-item-photo">
+          <img class="w-full" src="../picture/Davinci.png" alt="DaVinci Tutorials" />
+        </div>
+        <div class="grid-item-text">
+          <p>DaVinci Tutorials</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://www.bilibili.com/video/BV1Xm4y1b75z/">
+      <div class="flex flex-column grid-item">
+        <div class="w-full hid grid-item-photo">
+          <img class="w-full" src="../picture/C4D.jpg" alt="C4D Tutorials" />
+        </div>
+        <div class="grid-item-text">
+          <p>C4D</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  </div>
+  <div class="content-record">
+    <div class="center content-record-title">
+      <h2>Real-world Projects</h2>
+      <div class="placeholder"></div>
+      <div class="container">
+        <div class="row" >
+           <div class="col-xs-3 col-sm-6">
+            <div class="">
+              <a class="w-100" href="https://www.bilibili.com/video/BV19v411M7Rs">
+                <div class="flex flex-column grid-item">
+                  <div class="w-full hid grid-item-photo">
+                    <img class="w-full" src="../picture/He1.jpg" alt="He Tongxue" />
+                  </div>
+                  <div class="grid-item-text">
+                    <p>He Tongxue</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+           </div>
+           <div class="clearfix visible-xs"></div>
+           <div class="col-xs-3 col-sm-6">
+            <div class="subheading1">
+              <p>
+                I feel that I am at a very basic stage myself. To delve deeper into
+                learning, I need to adopt a learning attitude, watch more videos
+                from excellent video creators, and experience their use of visual
+                language and the charm of their words. It also requires continuous
+                personal creation and constant improvement in scriptwriting skills.
+                So, let's go!
+              </p>
+            </div>
+           </div>
+        </div>
+     </div>
+
+
+
+    </div>
+    <!-- Generic Button -->
+    <div class="flex w-full flex-column end-button-wrapper">
+      <a class="end-button" href="learn-eqpt.html">Find a Good Weapon</a>
+    </div>
+  </div>
+  <!--deeper learn area end-->
+  <!--footer-->
+  <!--Copyright area-->
+  <div class="footer">
+    <div class="wrapper">
+      <div class="top-wrapper">
+        <div class="logo">
+          <a class="flex" href="index_myself.html"><img src="../picture/Logo.png" alt="Konoha-kai" /></a>
+        </div>
+        <div class="flex text-zl">
+          <p>Capture the moments that make life beautiful!</p>
+        </div>
+      </div>
+      <hr />
+      <div class="flex justify-between bottom-wrapper">
+        <p>
+          © 2024 Konoha-kai. This site includes images courtesy of DJI, Nikon,
+          Bilibili, Youtube and Huawei. © Copyrights owned by respective
+          companies. Unauthorized use is prohibited.
+        </p>
+        <div class="flex social-media">
+          <a href="https://space.bilibili.com/3494368681921171"><img src="../picture/Bilibili.png" alt="bilibili" /></a>
+          <a href="weixin://contacts/profile/Sgk17866666969"><img src="../picture/Wechat.png" alt="wechat" /></a>
+          <a href="mailto:2363939672@qq.com"><img src="../picture/Email.png" alt="email" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!--footer end-->
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstarp.js"></script>
+<script src="../js/nav-pop.js"></script>
+
+</html>
